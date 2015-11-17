@@ -9,9 +9,3 @@ RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=acc
 RUN cd /opt && tar -xzvf jdk-8-linux-x64.tar.gz
 
 ENV PATH /opt/jdk1.8.0_65/bin:$PATH
-
-#COPY entrypoint.sh /usr/local/bin/
-
-#EXPOSE 8080
-
-#ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
