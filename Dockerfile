@@ -10,4 +10,5 @@ RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=acc
 	-O /opt/jdk-8-linux-x64.tar.gz && \
 	cd /opt && tar -xzvf jdk-8-linux-x64.tar.gz
 
-ENV PATH /opt/jdk1.8.0_65/bin:$PATH
+ENV JAVA_HOME /opt/jdk1.8.0_65
+ENV PATH $JAVA_HOME/bin:$PATH
