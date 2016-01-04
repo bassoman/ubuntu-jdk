@@ -3,6 +3,7 @@ MAINTAINER Jon Lancelle <bassoman@gmail.com>
 
 RUN apt-get update && apt-get install -y \
 	curl \
+	unzip \
 	wget
 
 RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
